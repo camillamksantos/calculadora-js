@@ -1,0 +1,12 @@
+{
+  "name": "revisaodw",
+  "version": "1.0.0",
+  "description": "calculadora com javascript",
+  "license": "ISC",
+  "author": "midori",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

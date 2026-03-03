@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <input id="display" readonly />
+        <div id="teclas">
+            <div class="linha">
+                <button type="button" class="numero" onclick="append('7')">7</button>
+                <button type="button" class="numero" onclick="append('8')">8</button>
+                <button type="button" class="numero" onclick="append('9')">9</button>
+                <button type="button" class="operador" onclick="append('/')">/</button>
+            </div>
+            <div class="linha">
+                <button type="button" class="numero" onclick="append('4')">4</button>
+                <button type="button" class="numero" onclick="append('5')">5</button>
+                <button type="button" class="numero" onclick="append('6')">6</button>
+                <button type="button" class="operador" onclick="append('*')">*</button>
+            </div>
+            <div class="linha">
+                <button type="button" class="numero" onclick="append('3')">3</button>
+                <button type="button" class="numero" onclick="append('2')">2</button>
+                <button type="button" class="numero" onclick="append('1')">1</button>
+                <button type="button" class="operador" onclick="append('-')">-</button>
+            </div>
+            <div class="linha">
+                <button type="button" class="numero" onclick="append('0')">0</button>
+                <button type="button" class="numero" onclick="append('.')">.</button>
+                <button type="button" class="igual" onclick="calculate()">=</button>
+                <button type="button" class="operador" onclick="append('+')">+</button>
+            </div>
+            <div class="linha">
+                <button type="button" class="limpar" onclick="AC()">AC</button>
+                <button type="button" class="limpar" onclick="C()">C</button>
+                <button type="button" class="operador" onclick="append('%')">%</button>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script type="module" src="./js/calculadora.js"></script>
+    <script type="module" src="./js/code.js"></script>
+    <script type="module" src="./js/operadores.js"></script>
+</body>
+</html>
